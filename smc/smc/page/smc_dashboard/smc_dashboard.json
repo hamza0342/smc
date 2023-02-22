@@ -1,0 +1,26 @@
+{
+ "content": null,
+ "creation": "2022-07-27 14:25:44.704620",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2022-08-11 10:46:28.460640",
+ "modified_by": "Administrator",
+ "module": "SMC",
+ "name": "smc-dashboard",
+ "owner": "Administrator",
+ "page_name": "SMC Dashboard",
+ "roles": [
+  {
+   "role": "SEMIS Manager"
+  },
+  {
+   "role": "SMC Manager"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "SMC Dashboard"
+}

@@ -1,0 +1,106 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:year",
+ "creation": "2022-05-12 17:44:23.264148",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "year",
+  "section_break_2",
+  "column_break_2",
+  "from_date",
+  "column_break_4",
+  "to_date",
+  "section_break_6",
+  "fixed_factors",
+  "per_enrolled_boys",
+  "per_enrolled_girls"
+ ],
+ "fields": [
+  {
+   "fieldname": "year",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Year",
+   "options": "Year",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "fixed_factors",
+   "fieldtype": "Table",
+   "label": "Flat rate per school level",
+   "options": "SMC Fixed Factors"
+  },
+  {
+   "fieldname": "per_enrolled_boys",
+   "fieldtype": "Currency",
+   "label": "Per enrolled boy"
+  },
+  {
+   "fieldname": "per_enrolled_girls",
+   "fieldtype": "Currency",
+   "label": "Per enrolled girl"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "year.start_date",
+   "fetch_if_empty": 1,
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "Form Submitting Start Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "year.end_date",
+   "fetch_if_empty": 1,
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "Form Submitting End Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-08-25 13:17:34.844149",
+ "modified_by": "Administrator",
+ "module": "SMC",
+ "name": "SMC Panel",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

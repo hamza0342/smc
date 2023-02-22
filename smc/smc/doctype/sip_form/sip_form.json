@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-04-19 15:22:38.117963",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "semis_code",
+  "school_name",
+  "district",
+  "column_break_4",
+  "talukatown",
+  "uc",
+  "head_teacher",
+  "column_break_8",
+  "smc_chairperson",
+  "smc_bank_name",
+  "smc_bank_account_no",
+  "section_break_12",
+  "sip_work_detail",
+  "section_break_14",
+  "sig_head_teacher",
+  "column_break_16",
+  "sig_smcz_chairperson"
+ ],
+ "fields": [
+  {
+   "fieldname": "semis_code",
+   "fieldtype": "Data",
+   "label": "SEMIS Code"
+  },
+  {
+   "fieldname": "school_name",
+   "fieldtype": "Data",
+   "label": "School Name"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "District"
+  },
+  {
+   "fieldname": "talukatown",
+   "fieldtype": "Data",
+   "label": "Taluka/Town"
+  },
+  {
+   "fieldname": "uc",
+   "fieldtype": "Data",
+   "label": "U.C"
+  },
+  {
+   "fieldname": "head_teacher",
+   "fieldtype": "Data",
+   "label": "Head Teacher"
+  },
+  {
+   "fieldname": "smc_chairperson",
+   "fieldtype": "Data",
+   "label": "SMC Chairperson"
+  },
+  {
+   "fieldname": "smc_bank_name",
+   "fieldtype": "Data",
+   "label": "SMC Bank Name"
+  },
+  {
+   "fieldname": "smc_bank_account_no",
+   "fieldtype": "Data",
+   "label": "SMC Bank Account NO"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sip_work_detail",
+   "fieldtype": "Table",
+   "options": "Sip work detail"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sig_head_teacher",
+   "fieldtype": "Data",
+   "label": "Name & Stamp Head Teacher/Incharge"
+  },
+  {
+   "fieldname": "sig_smcz_chairperson",
+   "fieldtype": "Data",
+   "label": "Signature & Stamp of SMC Chairperson"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-04-19 15:45:01.399789",
+ "modified_by": "Administrator",
+ "module": "SMC",
+ "name": "SIP Form",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

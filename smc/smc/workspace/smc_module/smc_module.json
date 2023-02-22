@@ -1,0 +1,140 @@
+{
+ "charts": [],
+ "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">SMC Quick Links</span>\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"SMC Assigned Schools\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"SMC Roster\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"SMC Panel\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"SMC Application List \",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Add New SMC Application \",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"SMC Dashboard\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"SMC Allotment Tool\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"SMC Performance Dashboard\",\"col\":3}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b></b></span>SMC Reports Links\",\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"SMC Reports\",\"col\":4}}]",
+ "creation": "2022-09-23 16:45:45.777838",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "idx": 0,
+ "label": "SMC Module",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "SMC Reports",
+   "link_count": 5,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "SMC School List",
+   "link_count": 0,
+   "link_to": "SMC School List",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "SMC District Wise Summary Report",
+   "link_count": 0,
+   "link_to": "SMC District Wise Summary Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Bank Wise School List",
+   "link_count": 0,
+   "link_to": "Bank Wise School List",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Executive Summary Report",
+   "link_count": 0,
+   "link_to": "Executive Summary",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "School Wise Report",
+   "link_count": 0,
+   "link_to": "School List",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2022-09-27 16:02:38.514856",
+ "modified_by": "Administrator",
+ "module": "SMC",
+ "name": "SMC Module",
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 5.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "SMC Assigned Schools",
+   "link_to": "SMC Assigned Schools",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "SMC Roster",
+   "link_to": "SMC Roster",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "SMC Panel",
+   "link_to": "SMC Panel",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "SMC Application List ",
+   "link_to": "SMC Application Form",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "New",
+   "label": "Add New SMC Application ",
+   "link_to": "SMC Application Form",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "SMC Dashboard",
+   "link_to": "smc-dashboard",
+   "type": "Page"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "SMC Allotment Tool",
+   "link_to": "SMC Allotment Tool",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "SMC Performance Dashboard",
+   "link_to": "SMC Performance Dashboard",
+   "type": "DocType"
+  }
+ ],
+ "title": "SMC Module"
+}

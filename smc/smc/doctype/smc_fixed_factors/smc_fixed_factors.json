@@ -1,0 +1,54 @@
+{
+ "_liked_by": "[\"Administrator\"]",
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-05-12 17:46:01.310654",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "level",
+  "boys",
+  "girls",
+  "mixed"
+ ],
+ "fields": [
+  {
+   "fieldname": "level",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Level",
+   "options": "Level"
+  },
+  {
+   "fieldname": "mixed",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Mixed"
+  },
+  {
+   "fieldname": "boys",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Boys"
+  },
+  {
+   "fieldname": "girls",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Girls"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-05-17 15:43:42.076600",
+ "modified_by": "Administrator",
+ "module": "SMC",
+ "name": "SMC Fixed Factors",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

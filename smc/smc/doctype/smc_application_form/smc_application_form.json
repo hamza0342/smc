@@ -1,0 +1,1059 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:SMC-{semis_code}-{year}",
+ "creation": "2022-04-15 10:03:56.360487",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "school_information",
+  "year",
+  "district",
+  "tehsil",
+  "uc",
+  "status",
+  "column_break_12",
+  "semis_code",
+  "school_name",
+  "school_address",
+  "level",
+  "level_order",
+  "gender",
+  "column_break_10",
+  "boys_enrolment",
+  "girls_enrolment",
+  "total_enrolment",
+  "no_of_classrooms",
+  "is_it_campus_school",
+  "if_camp_no_merg",
+  "total_budget",
+  "bank_info",
+  "account_title",
+  "bank_name",
+  "branch_code",
+  "bank_branch",
+  "column_break_21",
+  "smc_account_nocomplete",
+  "last_smc_amount_created_to_school",
+  "current_balance_in_smc_ac_as_of_june",
+  "smc_fund",
+  "received_funds_year_wise",
+  "column_break_28",
+  "if_yes_amount_in_rs",
+  "calculated_amount",
+  "exp_detail",
+  "infrastructure_maintenance",
+  "column_break_36",
+  "learning_material",
+  "covid_essentials_items_section",
+  "sanitizers",
+  "soaps",
+  "washable_face_mask",
+  "column_break_42",
+  "room_disinfectants",
+  "thermal_gun",
+  "balance_amount_in_smc_ac",
+  "rejection_of_form",
+  "incorrect_account_title",
+  "smc",
+  "hmindividual",
+  "school_name_is_diffrent_in_ac_title",
+  "ac_title_does_not_contains_school_name",
+  "incompleteincorrect_semis_code",
+  "semis_code_not_found_in_database",
+  "without_semis_code",
+  "column_break_50",
+  "document_missing",
+  "abank_statement",
+  "bhm_cnic",
+  "cchairman_cnic",
+  "dcheques_copy",
+  "eall_documents_missing",
+  "duplication_issue",
+  "mismatched_school_name",
+  "permanent_closed_temporary_closedbranch",
+  "smc_composition",
+  "teacher_section",
+  "secretary_name",
+  "chairperson_name",
+  "column_break_63",
+  "secretary_cnic",
+  "chairperson_cnic",
+  "column_break_65",
+  "secretary_cell",
+  "chairperson_cell",
+  "chairperson_section",
+  "child_section",
+  "child_1_name",
+  "child_2_name",
+  "column_break_78",
+  "child_1_s_o",
+  "child_2_s_o",
+  "section_break_81",
+  "name_5",
+  "column_break_83",
+  "name_5_cell",
+  "column_break_85",
+  "name_5_cnic",
+  "column_break_87",
+  "select_parent",
+  "section_break_84",
+  "name_6",
+  "column_break_95",
+  "name_6_cell",
+  "column_break_97",
+  "name_6_cnic",
+  "column_break_99",
+  "select_parent1",
+  "section_break_87",
+  "name_7",
+  "column_break_106",
+  "name_7_cell",
+  "column_break_108",
+  "name_7_cnic",
+  "column_break_110",
+  "select_parent2",
+  "section_break_90",
+  "name_8",
+  "column_break_117",
+  "name_8_cell",
+  "column_break_119",
+  "name_8_cnic",
+  "column_break_121",
+  "select_parent3",
+  "section_break_93",
+  "name_9",
+  "column_break_127",
+  "name_9_cell",
+  "column_break_129",
+  "name_9_cnic",
+  "column_break_131",
+  "select_parent4",
+  "section_break_96",
+  "name_10",
+  "column_break_137",
+  "name_10_cell",
+  "column_break_139",
+  "name_10_cnic",
+  "column_break_141",
+  "select_parent7",
+  "section_break_107",
+  "name_11",
+  "column_break_147",
+  "name_11_cell",
+  "column_break_149",
+  "name_11_cnic",
+  "column_break_151",
+  "select_parent5",
+  "section_break_113",
+  "name_12",
+  "column_break_157",
+  "name_12_cell",
+  "column_break_159",
+  "name_12_cnic",
+  "column_break_161",
+  "select_parent6",
+  "section_break_155",
+  "head_teacher_stamp",
+  "c_b_157",
+  "teo_stamp",
+  "c_b_150",
+  "counter_signed",
+  "section_break_169",
+  "date_of_last_smc_election",
+  "school_improvement_and_betterment_plan_section",
+  "sip",
+  "school_improvement_plan_attachments_section",
+  "copy_of_sip",
+  "column_break_1313",
+  "img_smc_application",
+  "column_break_1314",
+  "img_smc_application_back",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "semis_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "SEMIS Code",
+   "options": "School",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "semis_code.taluka",
+   "fetch_if_empty": 1,
+   "fieldname": "tehsil",
+   "fieldtype": "Data",
+   "label": "Tehsil",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "semis_code.school_name",
+   "fetch_if_empty": 1,
+   "fieldname": "school_name",
+   "fieldtype": "Data",
+   "label": "School Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "semis_code.address",
+   "fetch_if_empty": 1,
+   "fieldname": "school_address",
+   "fieldtype": "Data",
+   "label": "School Address",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "semis_code.level",
+   "fetch_if_empty": 1,
+   "fieldname": "level",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Level",
+   "options": "Level",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "semis_code.status",
+   "fetch_if_empty": 1,
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nFunctional\nTemporary Closed\nPermanent Closed",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.gender == 'Boys' || doc.gender=='Mixed'",
+   "fieldname": "boys_enrolment",
+   "fieldtype": "Int",
+   "label": "Boys Enrolment"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.gender == 'Girls' || doc.gender=='Mixed'",
+   "fieldname": "girls_enrolment",
+   "fieldtype": "Int",
+   "label": "Girls Enrolment"
+  },
+  {
+   "fieldname": "total_enrolment",
+   "fieldtype": "Int",
+   "label": "Total Enrolment",
+   "read_only": 1
+  },
+  {
+   "fieldname": "is_it_campus_school",
+   "fieldtype": "Select",
+   "label": "Is it Campus School",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval: doc.is_it_campus_school == \"Yes\"",
+   "fieldname": "if_camp_no_merg",
+   "fieldtype": "Int",
+   "label": "Write No. of Merged Schools"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "semis_code.district",
+   "fetch_if_empty": 1,
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "District",
+   "options": "District",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "semis_code.union_council",
+   "fetch_if_empty": 1,
+   "fieldname": "uc",
+   "fieldtype": "Data",
+   "label": "U.C",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bank_info",
+   "fieldtype": "Section Break",
+   "label": "2- SMC BANK INFORMATION"
+  },
+  {
+   "fieldname": "account_title",
+   "fieldtype": "Data",
+   "label": "Account Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Link",
+   "label": "Bank Name",
+   "options": "Bank detail",
+   "reqd": 1
+  },
+  {
+   "fieldname": "branch_code",
+   "fieldtype": "Int",
+   "label": "Branch Code",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "smc_account_nocomplete",
+   "fieldtype": "Data",
+   "label": "SMC Account no(Complete)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bank_branch",
+   "fieldtype": "Data",
+   "label": "Bank Branch"
+  },
+  {
+   "fieldname": "last_smc_amount_created_to_school",
+   "fieldtype": "Currency",
+   "label": "Last SMC Amount Credited to School"
+  },
+  {
+   "fieldname": "current_balance_in_smc_ac_as_of_june",
+   "fieldtype": "Currency",
+   "label": "Current Balance in SMC A/C as of June "
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "school_information",
+   "fieldtype": "Section Break",
+   "label": "1-SCHOOL INFORMATION:"
+  },
+  {
+   "fieldname": "smc_fund",
+   "fieldtype": "Section Break",
+   "label": "3-SMC FUND STATUS"
+  },
+  {
+   "fieldname": "received_funds_year_wise",
+   "fieldtype": "Select",
+   "label": "SMC Fund as June(Last Year) Received",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.received_funds_year_wise=='Yes'",
+   "fieldname": "if_yes_amount_in_rs",
+   "fieldtype": "Currency",
+   "label": "Amount in Rs"
+  },
+  {
+   "fieldname": "column_break_28",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "exp_detail",
+   "fieldtype": "Section Break",
+   "label": "4-EXPENDITURE DETAIL(up to 50% of SMC Funds for Infrastructure Maintenance, Remaining 50% For Learning Teaching Material, Covid Essentials)"
+  },
+  {
+   "fieldname": "infrastructure_maintenance",
+   "fieldtype": "Currency",
+   "label": "(i) Infrastructure Maintenance"
+  },
+  {
+   "fieldname": "learning_material",
+   "fieldtype": "Currency",
+   "label": "(ii) Learning / Teaching Material"
+  },
+  {
+   "fieldname": "washable_face_mask",
+   "fieldtype": "Currency",
+   "label": "(c) Washable Face Mask"
+  },
+  {
+   "fieldname": "sanitizers",
+   "fieldtype": "Currency",
+   "label": "(a) Sanitizers"
+  },
+  {
+   "fieldname": "soaps",
+   "fieldtype": "Currency",
+   "label": "(b) Soaps"
+  },
+  {
+   "fieldname": "room_disinfectants",
+   "fieldtype": "Currency",
+   "label": "(d) Room Disinfectants"
+  },
+  {
+   "fieldname": "thermal_gun",
+   "fieldtype": "Currency",
+   "label": "(e) Hand-Held Thermometer/ Thermal Gun"
+  },
+  {
+   "fieldname": "balance_amount_in_smc_ac",
+   "fieldtype": "Currency",
+   "label": "Balance Amount in SMC A/C"
+  },
+  {
+   "fieldname": "rejection_of_form",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "5-RESON (S) OF REJECTION OF SMC FORM(FOR RSU USE ONLY):"
+  },
+  {
+   "fieldname": "incorrect_account_title",
+   "fieldtype": "Heading",
+   "label": "Incorrect Account Title"
+  },
+  {
+   "fieldname": "smc",
+   "fieldtype": "Data",
+   "label": "SMC"
+  },
+  {
+   "fieldname": "hmindividual",
+   "fieldtype": "Data",
+   "label": "HM/Individual"
+  },
+  {
+   "fieldname": "school_name_is_diffrent_in_ac_title",
+   "fieldtype": "Data",
+   "label": "School Name is Diffrent in A/C title"
+  },
+  {
+   "fieldname": "ac_title_does_not_contains_school_name",
+   "fieldtype": "Data",
+   "label": "A/C title Does Not Contains School Name"
+  },
+  {
+   "fieldname": "incompleteincorrect_semis_code",
+   "fieldtype": "Data",
+   "label": "Incomplete/Incorrect SEMIS Code"
+  },
+  {
+   "fieldname": "semis_code_not_found_in_database",
+   "fieldtype": "Data",
+   "label": "SEMIS Code Not Found in Database"
+  },
+  {
+   "fieldname": "without_semis_code",
+   "fieldtype": "Data",
+   "label": "Without SEMIS Code"
+  },
+  {
+   "fieldname": "column_break_50",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "document_missing",
+   "fieldtype": "Heading",
+   "label": "Document Missing "
+  },
+  {
+   "fieldname": "abank_statement",
+   "fieldtype": "Data",
+   "label": "(a)Bank Statement "
+  },
+  {
+   "fieldname": "bhm_cnic",
+   "fieldtype": "Data",
+   "label": "(b)HM CNIC"
+  },
+  {
+   "fieldname": "cchairman_cnic",
+   "fieldtype": "Data",
+   "label": "(c)Chairman CNIC"
+  },
+  {
+   "fieldname": "dcheques_copy",
+   "fieldtype": "Data",
+   "label": "(d)Cheques Copy"
+  },
+  {
+   "fieldname": "eall_documents_missing",
+   "fieldtype": "Data",
+   "label": "(e)All Documents Missing"
+  },
+  {
+   "fieldname": "duplication_issue",
+   "fieldtype": "Heading",
+   "label": "Duplication issues:"
+  },
+  {
+   "fieldname": "mismatched_school_name",
+   "fieldtype": "Data",
+   "label": "School Name Mismatched With SEMIS Data:"
+  },
+  {
+   "fieldname": "permanent_closed_temporary_closedbranch",
+   "fieldtype": "Data",
+   "label": "Permanent Closed/ Temporary Closed/Branch"
+  },
+  {
+   "fieldname": "smc_composition",
+   "fieldtype": "Section Break",
+   "label": "SMC Composition (Primary /Middle 7 or 9,Elementary 9 or 11 & Secondary /H.Secondary 11 0r 13); Teacher Section"
+  },
+  {
+   "fieldname": "teacher_section",
+   "fieldtype": "Heading",
+   "hidden": 1,
+   "label": "Teacher Section"
+  },
+  {
+   "fieldname": "secretary_name",
+   "fieldtype": "Data",
+   "label": "Head Teacher (Secretary Name)"
+  },
+  {
+   "fieldname": "secretary_cnic",
+   "fieldtype": "Data",
+   "label": "Head Teacher CNIC"
+  },
+  {
+   "fieldname": "secretary_cell",
+   "fieldtype": "Data",
+   "label": "Head Teacher Cell #:"
+  },
+  {
+   "fieldname": "column_break_63",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_65",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "chairperson_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Chairperson/Chairman Section"
+  },
+  {
+   "fieldname": "chairperson_name",
+   "fieldtype": "Data",
+   "label": "Chairperson/Chairman Name:"
+  },
+  {
+   "fieldname": "chairperson_cnic",
+   "fieldtype": "Data",
+   "label": "Chairperson CNIC"
+  },
+  {
+   "fieldname": "chairperson_cell",
+   "fieldtype": "Data",
+   "label": "Chairperson Cell#"
+  },
+  {
+   "fieldname": "child_section",
+   "fieldtype": "Section Break",
+   "label": "Child Section"
+  },
+  {
+   "fieldname": "child_1_name",
+   "fieldtype": "Data",
+   "label": "Name of Child 1"
+  },
+  {
+   "fieldname": "child_2_name",
+   "fieldtype": "Data",
+   "label": "Name of Child 2"
+  },
+  {
+   "fieldname": "column_break_78",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "child_1_s_o",
+   "fieldtype": "Data",
+   "label": "S/O/D/O"
+  },
+  {
+   "fieldname": "child_2_s_o",
+   "fieldtype": "Data",
+   "label": "S/O/D/O"
+  },
+  {
+   "depends_on": "eval: doc.level=='Primary' || doc.level=='Middle' || doc.level=='Elementary' || doc.level=='Secondary' || doc.level=='Higher Secondary'",
+   "fieldname": "section_break_81",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "name_5",
+   "fieldtype": "Data",
+   "label": "5.Name"
+  },
+  {
+   "fieldname": "name_5_cell",
+   "fieldtype": "Data",
+   "label": "Cell#:"
+  },
+  {
+   "fieldname": "name_5_cnic",
+   "fieldtype": "Data",
+   "label": "CNIC"
+  },
+  {
+   "fieldname": "column_break_83",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_87",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "name_6",
+   "fieldtype": "Data",
+   "label": "6.Name"
+  },
+  {
+   "fieldname": "name_6_cell",
+   "fieldtype": "Data",
+   "label": "Cell#:"
+  },
+  {
+   "fieldname": "name_6_cnic",
+   "fieldtype": "Data",
+   "label": "CNIC"
+  },
+  {
+   "fieldname": "name_7",
+   "fieldtype": "Data",
+   "label": "7.Name"
+  },
+  {
+   "fieldname": "name_7_cell",
+   "fieldtype": "Data",
+   "label": "Cell#:"
+  },
+  {
+   "fieldname": "name_7_cnic",
+   "fieldtype": "Data",
+   "label": "CNIC"
+  },
+  {
+   "fieldname": "name_8",
+   "fieldtype": "Data",
+   "label": "8.Name"
+  },
+  {
+   "fieldname": "name_9",
+   "fieldtype": "Data",
+   "label": "9.Name"
+  },
+  {
+   "depends_on": "eval: doc.level=='Primary' || doc.level=='Middle' || doc.level=='Elementary' || doc.level=='Secondary' || doc.level=='Higher Secondary'",
+   "fieldname": "name_10",
+   "fieldtype": "Data",
+   "label": "10.Name"
+  },
+  {
+   "fieldname": "name_11",
+   "fieldtype": "Data",
+   "label": "11.Name"
+  },
+  {
+   "fieldname": "name_12",
+   "fieldtype": "Data",
+   "label": "12.Name"
+  },
+  {
+   "fieldname": "name_8_cell",
+   "fieldtype": "Data",
+   "label": "Cell#:"
+  },
+  {
+   "fieldname": "name_9_cell",
+   "fieldtype": "Data",
+   "label": "Cell#:"
+  },
+  {
+   "fieldname": "name_10_cell",
+   "fieldtype": "Data",
+   "label": "Cell#:"
+  },
+  {
+   "fieldname": "name_11_cell",
+   "fieldtype": "Data",
+   "label": "Cell#:"
+  },
+  {
+   "fieldname": "name_12_cell",
+   "fieldtype": "Data",
+   "label": "Cell#:"
+  },
+  {
+   "fieldname": "name_8_cnic",
+   "fieldtype": "Data",
+   "label": "CNIC"
+  },
+  {
+   "fieldname": "name_9_cnic",
+   "fieldtype": "Data",
+   "label": "CNIC"
+  },
+  {
+   "fieldname": "name_10_cnic",
+   "fieldtype": "Data",
+   "label": "CNIC"
+  },
+  {
+   "fieldname": "name_11_cnic",
+   "fieldtype": "Data",
+   "label": "CNIC"
+  },
+  {
+   "fieldname": "name_12_cnic",
+   "fieldtype": "Data",
+   "label": "CNIC"
+  },
+  {
+   "depends_on": "eval: doc.level=='Primary' || doc.level=='Middle' || doc.level=='Elementary' || doc.level=='Secondary' || doc.level=='Higher Secondary'",
+   "fieldname": "section_break_84",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval: doc.level=='Primary' || doc.level=='Middle' || doc.level=='Elementary' || doc.level=='Secondary' || doc.level=='Higher Secondary'",
+   "fieldname": "section_break_87",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval: doc.level=='Primary' || doc.level=='Middle' || doc.level=='Elementary' || doc.level=='Secondary' || doc.level=='Higher Secondary'",
+   "fieldname": "section_break_90",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval: doc.level=='Primary' || doc.level=='Middle' || doc.level=='Elementary' || doc.level=='Secondary' || doc.level=='Higher Secondary'",
+   "fieldname": "section_break_93",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval: doc.level=='Elementary' || doc.level=='Secondary' || doc.level=='Higher Secondary'",
+   "fieldname": "section_break_96",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_95",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_99",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval: doc.level=='Elementary' || doc.level=='Secondary' || doc.level=='Higher Secondary'",
+   "fieldname": "section_break_107",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval: doc.level=='Secondary' || doc.level=='Higher Secondary'",
+   "fieldname": "section_break_113",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_85",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_97",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_106",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_108",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_110",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_117",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_119",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_121",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_127",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_129",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_131",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_137",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_139",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_141",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_147",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_149",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_151",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_157",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_161",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_159",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_155",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "head_teacher_stamp",
+   "fieldtype": "Data",
+   "label": "Name & Stamp Head Teacher/Incharge"
+  },
+  {
+   "fieldname": "teo_stamp",
+   "fieldtype": "Data",
+   "label": "Name & Stamp TEO (M/F) primary/Secondary"
+  },
+  {
+   "description": "(Name & Stamp)DEO (Primary/Elementry/Sec.&H.Secondary)",
+   "fieldname": "counter_signed",
+   "fieldtype": "Data",
+   "label": "Counter Signed by"
+  },
+  {
+   "fieldname": "c_b_157",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "c_b_150",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "2021-22",
+   "fieldname": "year",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Year",
+   "options": "Year",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "school_improvement_plan_attachments_section",
+   "fieldtype": "Section Break",
+   "label": "School Improvement Plan Attachments"
+  },
+  {
+   "fieldname": "copy_of_sip",
+   "fieldtype": "Attach Image",
+   "label": "Scan Copy of SIP form"
+  },
+  {
+   "fieldname": "img_smc_application",
+   "fieldtype": "Attach Image",
+   "label": "Scan Picture of SMC application form filled manually, signed and stamped(front)"
+  },
+  {
+   "fetch_from": "semis_code.gender",
+   "fetch_if_empty": 1,
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Gender",
+   "options": "\nBoys\nGirls\nMixed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_budget",
+   "fieldtype": "Currency",
+   "label": "Fund Amount"
+  },
+  {
+   "fieldname": "section_break_169",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "date_of_last_smc_election",
+   "fieldtype": "Date",
+   "label": "Date of Last SMC Election"
+  },
+  {
+   "fieldname": "no_of_classrooms",
+   "fieldtype": "Int",
+   "label": "No. of Classrooms"
+  },
+  {
+   "fieldname": "column_break_42",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "school_improvement_and_betterment_plan_section",
+   "fieldtype": "Section Break",
+   "label": "School Improvement and Betterment Plan"
+  },
+  {
+   "fieldname": "sip",
+   "fieldtype": "Table",
+   "label": "SIP",
+   "options": "SIP"
+  },
+  {
+   "fieldname": "img_smc_application_back",
+   "fieldtype": "Attach Image",
+   "label": "Scan Picture of SMC application form filled manually, signed and stamped(back)"
+  },
+  {
+   "fieldname": "select_parent",
+   "fieldtype": "Select",
+   "options": "\nParent\nTeacher\nAdopter/Partner"
+  },
+  {
+   "fieldname": "select_parent1",
+   "fieldtype": "Select",
+   "options": "\nParent\nTeacher\nAdopter/Partner"
+  },
+  {
+   "fieldname": "select_parent2",
+   "fieldtype": "Select",
+   "options": "\nParent\nTeacher"
+  },
+  {
+   "fieldname": "select_parent3",
+   "fieldtype": "Select",
+   "options": "\nParent\nTeacher"
+  },
+  {
+   "fieldname": "select_parent4",
+   "fieldtype": "Select",
+   "options": "\nParent\nTeacher"
+  },
+  {
+   "fieldname": "select_parent7",
+   "fieldtype": "Select",
+   "options": "\nParent\nTeacher"
+  },
+  {
+   "fieldname": "select_parent5",
+   "fieldtype": "Select",
+   "options": "\nParent\nTeacher"
+  },
+  {
+   "fieldname": "select_parent6",
+   "fieldtype": "Select",
+   "options": "\nParent\nTeacher"
+  },
+  {
+   "fieldname": "column_break_36",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "covid_essentials_items_section",
+   "fieldtype": "Section Break",
+   "label": "Covid Essentials Items"
+  },
+  {
+   "fieldname": "calculated_amount",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Calculated Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_1313",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_1314",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "level.list_order",
+   "fieldname": "level_order",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Level Order",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SMC Application Form",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-06-06 11:05:57.518994",
+ "modified_by": "Administrator",
+ "module": "SMC",
+ "name": "SMC Application Form",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

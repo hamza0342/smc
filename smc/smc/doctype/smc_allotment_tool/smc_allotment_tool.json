@@ -1,0 +1,123 @@
+{
+ "actions": [],
+ "allow_copy": 1,
+ "allow_rename": 1,
+ "creation": "2022-08-04 14:56:30.448047",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "year",
+  "division",
+  "district",
+  "taluka",
+  "reference_doctype",
+  "filters_section",
+  "filter_list",
+  "1",
+  "get_schools",
+  "schools_section",
+  "schools_table",
+  "update_status"
+ ],
+ "fields": [
+  {
+   "columns": 3,
+   "fieldname": "year",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Year",
+   "options": "Year",
+   "reqd": 1
+  },
+  {
+   "fieldname": "reference_doctype",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Reference Doctype",
+   "options": "DocType",
+   "read_only": 1
+  },
+  {
+   "fieldname": "filter_list",
+   "fieldtype": "HTML",
+   "label": "Filter List"
+  },
+  {
+   "fieldname": "filters_section",
+   "fieldtype": "Section Break",
+   "label": "Filters"
+  },
+  {
+   "columns": 3,
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "label": "District",
+   "options": "District"
+  },
+  {
+   "columns": 3,
+   "fieldname": "division",
+   "fieldtype": "Link",
+   "label": "Division",
+   "options": "Division"
+  },
+  {
+   "columns": 3,
+   "fieldname": "taluka",
+   "fieldtype": "Link",
+   "label": "Taluka",
+   "options": "Taluka"
+  },
+  {
+   "fieldname": "get_schools",
+   "fieldtype": "Button",
+   "label": "Get Schools"
+  },
+  {
+   "fieldname": "schools_section",
+   "fieldtype": "Section Break",
+   "label": "Schools"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "schools_table",
+   "fieldtype": "Table",
+   "options": "GSP Allotment Tool Table"
+  },
+  {
+   "fieldname": "update_status",
+   "fieldtype": "Button",
+   "label": "Update Status"
+  },
+  {
+   "fieldname": "1",
+   "fieldtype": "Heading"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "is_custom_form": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2022-08-11 12:12:59.177377",
+ "modified_by": "Administrator",
+ "module": "SMC",
+ "name": "SMC Allotment Tool",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
